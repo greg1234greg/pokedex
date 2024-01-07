@@ -1,0 +1,222 @@
+@font-face {
+    font-family: pokemon;
+    src: url("media/font/pokemon-rs.woff2");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: pokemon, sans-serif;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+body {
+    background-color: #F7D346;
+    padding-bottom: 50px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+input, #drop {
+    box-sizing: border-box;
+    display: inline-block;
+    color: black;
+    background-color: #F8EC99;
+    height: 95px;
+    border: 6px solid #34353e;
+    margin: 50px 5px;
+    border-radius: 10px;
+    font-size: 3.5rem;
+}
+
+#pokemon {
+    width: 50%;
+    padding: 1%;
+}
+
+#button {
+    width: 25%;
+}
+
+#drop {
+    width: 15%;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+aside {
+    min-width: 215px;
+    max-width: 215px;
+    height: fit-content;
+    background-color: #F8EC99;
+    border: 5px solid #aaa36e;
+    margin-top: 80px;
+    border-radius: 10px;
+}
+
+aside img {
+    width: 95%;
+    margin-left: 5px;
+}
+
+aside p {
+    font-size: 1.9rem;
+    margin: 5px 15px;
+}
+
+aside p span {
+    font-size: 2.5rem;
+}
+
+aside h2 {
+    font-size: 2.4rem;
+    letter-spacing: 0.15rem;
+    margin-left: 20px;
+    margin-bottom: 75px;
+}
+
+article {
+    max-width: 500px;
+    min-width: 250px;
+    height: fit-content;
+    background-color: #F8EC99;
+    border: 7px solid #34353e;
+    border-radius: 10px;
+    margin-top: 110px;
+}
+
+article h3 {
+    font-size: 2rem;
+    margin-left: 30px;
+}
+
+.section {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    border: 5px solid #aaa36e;
+    border-radius: 5px;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.section p {
+    width: fit-content;
+    margin: 5px;
+    font-size: 1.8rem;
+}
+
+.section #IDN {
+    float: right;
+    font-size: 1.3rem;
+    letter-spacing: 0.15rem;
+}
+
+#IDN span {
+    font-size: 1.8rem;
+}
+
+.section #desc {
+    background-color: white;
+    width: 100%;
+    margin: 0;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+.section #description {
+    background-color: white;
+    width: 97%;
+    padding: 10px;
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.section #hidden {
+    float: right;
+    display: none;
+}
+
+#back, #next {
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    margin: 10px;
+    margin-top: 80px;
+    display: none;
+}
+
+#back {
+    float: left;
+}
+
+#next {
+    float: right;
+}
+
+#invalid {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    display: none;
+}
+
+#errorBox {
+    width: 300px;
+    height: 150px;
+    display: block;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+}
+
+#errorBox h2 {
+    display: block;
+    margin: 60px;
+}
+
+@media only screen and (max-width: 680px) {
+
+    form {
+        display: flexbox;
+        flex-wrap: wrap;
+    }
+    input, #drop {
+        display: block;
+        flex-basis: 70%;
+        width: 70%;
+        margin: 10px auto;
+    }
+
+    #button {
+        margin-bottom: 50px;
+    }
+
+    aside {
+        margin-top: 0px;
+    }
+
+    article {
+        margin-top: 20px;
+    }
+
+    section {
+        padding-bottom: 200px;
+    }
+}

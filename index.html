@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta  name="viewport" content="width=device-width initial-scale=1">
+        <title>Pokedex</title>
+        <script src="app.js" type="module" defer></script>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <form action="#">
+            <select id="drop">
+                <option value="red">Red</option>=
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+                <option value="gold">Gold</option>
+                <option value="silver">Silver</option>
+                <option value="crystal">Crystal</option>
+                <option value="ruby">Ruby</option>
+                <option value="sapphire">Sapphire</option>
+                <option value="emerald">Emerald</option>
+                <option value="firered">Fire Red</option>
+                <option value="leafgreen">Leaf Green</option>
+                <option value="diamond">Diamond</option>
+                <option value="pearl">Pearl</option>
+                <option value="platinum">Platinum</option>
+                <option value="heartgold">Heart Gold</option>
+                <option value="soulsilver">Soul Silver</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="black-2">Black 2</option>                
+                <option value="white-2">White 2</option>
+            </select>
+            <input type="text" name="pokemon" id="pokemon" autocomplete="off">
+            
+            <input type="submit" value="Search" id="button">
+        </form>
+        <section>
+            <aside>
+                <p id="number"></p>
+                <img id="sprite"/>
+                <h2 id="name"></h2>
+            </aside>
+            <article>
+                <h3>PROFILE</h3>
+                <div class="section">
+                    <p id="IDN"></p>
+                    <p>OT/KuruSh1</p>
+                    <p id="desc"></p>
+                </div>
+                <h3>ABILITIES</h3>
+                <div class="section">
+                    <p id="hidden">Hidden Ability</p>
+                    <p id="title"></p>
+                    <p id="description"></p>
+                </div>
+                <button id="back">&lt</button>
+                <button id="next">></button>
+            </article>
+        </section>
+        <div id="invalid">
+            <div id="errorBox">
+                <h2>Invalid Pokemon</h2>
+            </div>
+        </div>
+    </body>
+</html>
